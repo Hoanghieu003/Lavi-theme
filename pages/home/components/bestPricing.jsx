@@ -35,7 +35,7 @@ export default function BestPrice ({bestPriceItems = []}) {
       <li key={item.index}>
         <div className="item-left">
             <img src={item.imageUrl} alt="" />
-          <Link href="/our-services">
+          <Link href={`/our-services/service/${item.id}`}>
             <a>
               <h4 className="title">{item.title}</h4>
             </a>
