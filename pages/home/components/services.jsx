@@ -27,9 +27,9 @@ export default function Services ({services = []}) {
                 <img src={item.imageUrl} alt=""/>
             </div>
             <div className="dlab-info">
-                <h3 className="dlab-title"><a href="/our-services">{item.title}</a></h3>
+                <h3 className="dlab-title"><a href={`/our-services/service/${item.id}`}>{item.title}</a></h3>
                 <p>{item.description}</p>
-                <a href="/our-services" className="btn">Learn More</a>
+                <a href={`/our-services/service/${item.id}`} className="btn">Learn More</a>
             </div>
         </div>
     </div>
